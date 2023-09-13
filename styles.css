@@ -2,28 +2,56 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8; /* Light gray background */
+  background-color: #aaaaaa51;
+  margin-bottom: 100px;
+  background-image: url("images/background.png");
+}
+
+.pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: 15px;
+}
+
+img {
+  width: 100px;
 }
 
 nav {
-  background-color: #333;
+  background-color: #474845;
   color: white;
   padding: 1rem 0;
   width: 100%;
+  padding: 30px;
 }
+h1 {
+  color: #b4d4a7;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
 h3 {
   text-align: center;
 }
+
+h5 {
+  font-size: 20px;
+}
+
 .navbar {
   display: flex;
-  flex-direction: column; /* Stack the content vertically */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .name {
+  margin-top: 40px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -31,17 +59,12 @@ h3 {
   justify-content: center;
 }
 
-.name h1 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
 .name p {
   margin: 0;
 }
 .navbar h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .navbar p {
@@ -49,9 +72,11 @@ h3 {
 }
 
 .contact-info {
-  margin-top: 10px;
-  margin-left: 300px;
+  margin-top: 50px;
+  margin-left: 320px;
   margin-right: 300px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.738);
 }
 .contact-info p {
   margin: 0 auto;
@@ -61,27 +86,35 @@ h3 {
 .con {
   margin-top: -10px;
 }
+
 button {
-  background-color: #0077b5;
+  width: 130px;
+  height: 50px;
+  background-color: #6fa35a;
   color: white;
-  border: none;
-  padding: 0.5rem 1rem;
+  font-size: 15px;
+  padding: 2px;
   cursor: pointer;
-  margin: 1rem;
   display: block;
   margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb82;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.179), 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .projects {
-  display: none; /* Initially hide the projects section */
+  display: none;
   padding: 2rem;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.454);
 }
+
 .project {
   border: 1px solid #ddd;
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .project img {
@@ -89,9 +122,16 @@ button {
   height: auto;
 }
 
+.emailimg {
+  width: 35px;
+}
+
+.resimg {
+  margin-bottom: 10px;
+}
 .contact {
-  padding: 2rem;
   text-align: center;
+  font-size: 13px;
 }
 
 .contact a {
@@ -102,6 +142,7 @@ button {
 a {
   color: #0077b5;
 }
+
 .contact a:hover {
   text-decoration: underline;
 }
@@ -114,13 +155,13 @@ a {
   text-align: center;
 }
 .project-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #efefef;
+  border: 1px solid #bbbbbb82;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.179), 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
@@ -146,7 +187,7 @@ a {
 .project-links a {
   display: inline-block;
   margin-right: 10px;
-  color: #333;
+  color: #699956;
   text-decoration: none;
   font-weight: bold;
 }
